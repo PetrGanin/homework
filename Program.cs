@@ -57,7 +57,7 @@ switch (namber)
         while (namberA < namberB)
             if (namberB > namberC)
             {
-                Console.WriteLine("Это число большее: " + namberC );
+                Console.WriteLine("Это число большее: " + namberC);
                 break;
             }
             else
@@ -69,6 +69,26 @@ switch (namber)
         break;
 
     case 3:
+        // Задача 6: Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
+
+        // 4 -> да
+        // -3 -> нет
+        // 7 -> нет
+
+        Console.WriteLine("Проверка на четность и остаток. ");
+        Console.WriteLine("Введите число: ");
+        int meaning = Convert.ToInt32(Console.ReadLine());
+
+        if (meaning % 2 == 0)
+        {
+            Console.WriteLine("это число четное и делится без остатка");
+            Console.WriteLine(meaning / 2);
+        }
+        else
+        {
+            Console.WriteLine("это число не четное и не делится без остатка.");
+        }
+
         break;
 
     case 4:
