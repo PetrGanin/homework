@@ -28,6 +28,44 @@ switch (namber)
         break;
 
     case 2:
+        // Задача 4: Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
+
+        // 2, 3, 7 -> 7
+        // 44 5 78 -> 78
+        // 22 3 9 -> 22
+
+        Console.WriteLine("Ввод 3 чисел и выдает max: ");
+        Console.WriteLine("Введите число: ");
+        int namberA = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите второе число: ");
+        int namberB = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Введите третье число: ");
+        int namberC = Convert.ToInt32(Console.ReadLine());
+
+        while (namberA > namberB)
+            if (namberA > namberC)
+            {
+
+                Console.WriteLine("Это число большее: " + namberA);
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Это число большее: " + namberC);
+
+            }
+        while (namberA < namberB)
+            if (namberB > namberC)
+            {
+                Console.WriteLine("Это число большее: " + namberC );
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Это число большее: " + namberC);
+                break;
+            }
+
         break;
 
     case 3:
