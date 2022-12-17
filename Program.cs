@@ -92,8 +92,20 @@ switch (namber)
         break;
 
     case 4:
-        break;
 
-    default:
+        Console.WriteLine("Показывает все четные числа. ");
+        Console.WriteLine("Введите число: ");
+        int Num = Convert.ToInt32(Console.ReadLine());
+        
+            for (int i = 0; i <= Num; i++)
+            {
+                if (i % 2 == 0)
+                {
+                    Console.Write("{0} ", i);
+                }
+            }
+            Console.ReadLine();
         break;
 }
+        
+        
